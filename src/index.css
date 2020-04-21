@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width:100%;
+  height:auto;
+  display: flex;
+  align-items: center;
+}
+#root{
+  width:100%;
+  height:auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  width:90%;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.search-box-autocomplete{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+.searchInput {
+  width:80%;
+  height: 40px;
+  outline: none;
+}
+input{
+  width:100%;
+  height:100%;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+button{
+  width:100%;
+  color:white;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  height:100%;
+}
+.searchIcon{
+  width:20%;
+  height: 40px;
+}
+.games{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height:auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.game{
+  display: flex;
+  flex-direction: column;
+  width:300px;
+  height:auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  align-items: flex-start;
+  background-color: burlywood;
+}
+.game-title{
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: beige;
+  width:100%;
+}
+.game-body{
+ display: flex;
+ flex-direction: column; 
+ background-color: whitesmoke;
+ width:100%;
+}
+.game-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ width:100%;
+ background-color: thistle;
+}
+
+ul{
+  width: 80%;
+  height:500px;
+  min-height:100px;
+  z-index: inherit 1000;
+  border:1px solid black;
+}
+li{
+  width:100%;
+  height:10px;
+  border:1px solid grey;
+}
+.dashboardClass{
+  width: 100%;
+  z-index:999;
+}
