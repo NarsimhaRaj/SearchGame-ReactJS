@@ -18,6 +18,8 @@ class Dashboard extends Component {
                 data.sort((a, b) => (b.score > a.score) ? 1 : ((a.score > b.score) ? -1 : 0));
                 this.setState({ games: data, myGames: data });       
                 this.props.setGamesData(data);
+                let tP = Math.ceil(data.length/12);
+                this.props.setTotalPages(tP);
             })
             .catch(error => {
                 console.log(error);
@@ -58,8 +60,8 @@ class Dashboard extends Component {
                             </div>
                             <div class="games">
                                 {
-                                    this.state.myGames.map((game, index) =>
-                                        <GameDetails game={game} key={index} />
+                                    this.state.myGames.map((game, index) =>                                        
+                                        (index+1)>=this.props.currentPage && this.props.currentPage+11>index ? <GameDetails game={game} key={index} />:null
                                     )
                                 }
                             </div>
